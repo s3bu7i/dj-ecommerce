@@ -1,0 +1,60 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>404 Page Not Found</title>
+    <style>
+      body {
+        background-color: #f1f1f1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        font-family: Arial, sans-serif;
+      }
+
+      .container {
+        text-align: center;
+      }
+
+      .error-code {
+        font-size: 10rem;
+        font-weight: bold;
+        color: #333;
+        margin-bottom: 2rem;
+      }
+
+      .error-message {
+        font-size: 2rem;
+        color: #666;
+        margin-bottom: 2rem;
+      }
+
+      .animated-text {
+        display: inline-block;
+        animation: blink 1s infinite;
+      }
+
+      @keyframes blink {
+        0% {
+          opacity: 0;
+        }
+        50% {
+          opacity: 1;
+        }
+        100% {
+          opacity: 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="error-code">404</h1>
+      <p class="error-message">Page Not Found</p>
+      <p class="animated-text">Searching for the missing page...</p>
+    </div>
+  </body>
+</html>

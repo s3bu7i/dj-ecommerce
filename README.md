@@ -83,8 +83,12 @@ python manage.py createsuperuser #also you create own superuser
 
 ## Screenshots
 
-![Home Page]()
-
+![Home Page](https://github.com/s3bu7i/dj-ecommerce/blob/main/screenshots/home.png)
+![About Us](https://github.com/s3bu7i/dj-ecommerce/blob/main/screenshots/aboutus.png)
+![404](https://github.com/s3bu7i/dj-ecommerce/blob/main/screenshots/404.png)
+![Cart](https://github.com/s3bu7i/dj-ecommerce/blob/main/screenshots/cart.png)
+![Contact Us](https://github.com/s3bu7i/dj-ecommerce/blob/main/screenshots/contact.png)
+![Items](https://github.com/s3bu7i/dj-ecommerce/blob/main/screenshots/items.png)
 
 
 ## Tech Stack

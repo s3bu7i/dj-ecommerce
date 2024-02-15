@@ -83,7 +83,8 @@ python manage.py createsuperuser #also you create own superuser
 
 ## Screenshots
 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+![Home Page]()
+
 
 
 ## Tech Stack

@@ -1,5 +1,12 @@
 import os
 
+
+
+# import env
+# env = env.Env()
+# env.Env.read_env()
+
+
 ENVIRONMENT = os.getenv('ENVIRONMENT', 'development')
 
 

@@ -13,7 +13,9 @@ ENVIRONMENT = os.getenv('ENVIRONMENT', 'development')
 
 DEBUG = False
 # ALLOWED_HOSTS = []
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['.vercel.app', 'now.sh', '127.0.0.1', 'localhost']
+
+
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -86,6 +88,7 @@ DATABASES = {
         "NAME": os.path.join(BASE_DIR, 'db.sqlite3')
     }
 }
+
 # DATABASES = {
 #     'default': {
 #         'ENGINE':'django.db.backends.postgresql',

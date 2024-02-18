@@ -11,6 +11,7 @@ urlpatterns = [
     # path("about_us/",about_us,name="about_us")
 ]
 
+
 if settings.DEBUG:
     urlpatterns += static(settings.STATIC_URL,
                           document_root=settings.STATIC_ROOT)

@@ -27,7 +27,7 @@ pluggy
 psycopg          
 psycopg-binary     
 psycopg2         
-psycopg2-binary   
+psycopg2-binary==3.1.18
 purge            
 py               
 pycparser         

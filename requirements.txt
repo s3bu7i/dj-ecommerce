@@ -26,9 +26,9 @@ pip
 pluggy           
 psycopg          
 psycopg-binary     
-psycopg2         
+psycopg2  
+pip       
 psycopg2-binary
-
 purge            
 py               
 pycparser         

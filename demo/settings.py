@@ -10,10 +10,10 @@ import os
 ENVIRONMENT = os.getenv('ENVIRONMENT', 'development')
 
 
-DEBUG = True
-ALLOWED_HOSTS = []
-# ALLOWED_HOSTS = ['.vercel.app']
-# DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+DEBUG = False
+# ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['.vercel.app']
+DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '-05sgp9!deq=q1nltm@^^2cc+v29i(tyybv3v2t77qi66czazj'
@@ -79,24 +79,24 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'static_root')
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media_root')
 
-# DATABASES = {
-#     "default": {
-#         "ENGINE": "django.db.backends.sqlite3",
-#         "NAME": os.path.join(BASE_DIR, 'db.sqlite3')
-#     }
-# }
 DATABASES = {
-    'default': {
-        'ENGINE':os.getenv( 'django.db.backends.postgresql'),
-        'URL':os.getenv('postgresql://postgres:2bggBDgGec5CDeDf*dg54ca53ad1AeEa@viaduct.proxy.rlwy.net:27664/railway'),
-        'NAME':os.getenv('railway'),
-        'USER':os.getenv('postgres'),
-        'PASSWORD':os.getenv('2bggBDgGec5CDeDf*dg54ca53ad1AeEa'),
-        'HOST':os.getenv('viaduct.proxy.rlwy.net'),
-        'PORT':os.getenv(27664),
+    "default": {
+        "ENGINE": "django.db.backends.sqlite3",
+        "NAME": os.path.join(BASE_DIR, 'db.sqlite3')
     }
-
 }
+# DATABASES = {
+#     'default': {
+#         'ENGINE':'django.db.backends.postgresql',
+#         'URL':'postgresql://postgres:2bggBDgGec5CDeDf*dg54ca53ad1AeEa@viaduct.proxy.rlwy.net:27664/railway',
+#         'NAME':'railway',
+#         'USER':'postgres',
+#         'PASSWORD':'2bggBDgGec5CDeDf*dg54ca53ad1AeEa',
+#         'HOST':'viaduct.proxy.rlwy.net',
+#         'PORT':27664,
+#     }
+
+# }
 
 
 

@@ -46,4 +46,4 @@ wcwidth==0.2.13
 wheel==0.42.0
 zipp==3.17.0
 psycopg2-binary==2.9.9
-Django==4.0
+Django==5.0.1

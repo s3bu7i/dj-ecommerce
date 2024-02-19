@@ -18,6 +18,7 @@ ALLOWED_HOSTS = ['*']
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
+
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '-05sgp9!deq=q1nltm@^^2cc+v29i(tyybv3v2t77qi66czazj'
 
@@ -158,7 +159,7 @@ EMAIL_HOST_PASSWORD = "peakolxczdpmkpae"
 
 # C:\Users\Dino\Documents\GitHub\Python-Courses\Django-Ecommerce\env\Scripts\activate
 
-django_heroku.settings(locals())
 
+django_heroku.settings(locals())
 
 

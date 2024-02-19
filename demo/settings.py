@@ -1,8 +1,8 @@
 # import environ
 import os
+import django_heroku
 
-
-
+django_heroku.settings(locals())
 
 # env = environ.Env()
 # environ.Env.read_env()
@@ -13,7 +13,7 @@ ENVIRONMENT = os.getenv('ENVIRONMENT', 'development')
 
 DEBUG = False
 # ALLOWED_HOSTS = []
-ALLOWED_HOSTS = ['.vercel.app', 'now.sh', '127.0.0.1', 'localhost']
+ALLOWED_HOSTS = ['*']
 
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'

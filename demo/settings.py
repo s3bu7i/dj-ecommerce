@@ -162,6 +162,6 @@ EMAIL_HOST_PASSWORD = "peakolxczdpmkpae"
 # C:\Users\Dino\Documents\GitHub\Python-Courses\Django-Ecommerce\env\Scripts\activate
 
 
-django_heroku.settings(locals())
+# django_heroku.settings(locals())
 
 

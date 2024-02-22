@@ -107,6 +107,7 @@ DATABASES = {
 
 
 
+
 if ENVIRONMENT == 'production':
     DEBUG = True
     SECRET_KEY = os.getenv('SECRET_KEY')
@@ -119,6 +120,7 @@ if ENVIRONMENT == 'production':
     SECURE_SSL_REDIRECT = True
     SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 
+    
 # Auth
 AUTHENTICATION_BACKENDS = (
     'django.contrib.auth.backends.ModelBackend',
@@ -162,6 +164,6 @@ EMAIL_HOST_PASSWORD = "peakolxczdpmkpae"
 # C:\Users\Dino\Documents\GitHub\Python-Courses\Django-Ecommerce\env\Scripts\activate
 
 
-# django_heroku.settings(locals())
+django_heroku.settings(locals())
 
 

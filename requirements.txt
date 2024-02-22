@@ -9,7 +9,7 @@ coverage==7.4.1
 cryptography==42.0.2
 defusedxml==0.7.1
 dj-database-url==2.1.0
-Django==5.0.1
+Django==5.0.2
 django-allauth==0.60.1
 django-anymail==10.2
 django-countries==7.5.1

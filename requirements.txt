@@ -6,7 +6,7 @@ cffi==1.16.0
 charset-normalizer==3.3.2
 colorama==0.4.6
 coverage==7.4.1
-cryptography==42.0.2
+cryptography==42.0.4
 defusedxml==0.7.1
 dj-database-url==2.1.0
 Django==5.0.1

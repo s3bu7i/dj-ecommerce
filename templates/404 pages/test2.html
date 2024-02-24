@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-1752YPLP7H"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-1752YPLP7H");
+    </script>
+
+    <meta charset="UTF-8" />
+    <title>404</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css?family=Roboto+Mono");
+      .text-center {
+        position: absolute;
+        width: 40%;
+        top: 10%;
+        text-align: center;
+        left: calc((100% - 40%) / 2);
+        color: white;
+      }
+      .text-center h1 {
+        font-size: 11em;
+        font-family: "Roboto Mono", sans-serif;
+        margin: 2rem;
+      }
+      .text-center h2 {
+        font-family: "Roboto Mono", sans-serif;
+        font-size: 2rem;
+        margin: 0%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="text-center" id="tsparticles">
+      <h1>404</h1>
+      <h2>This page does not exist</h2>
+      <h2>But The Matrix does</h2>
+    </div>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/tsparticles@2/tsparticles.bundle.min.js"
+    ></script>
+    <script>
+      (async () => {
+        await tsParticles.load("tsparticles", {
+          particles: {
+            color: {
+              value: "#00FF00",
+            },
+            move: {
+              direction: "bottom",
+              enable: true,
+              outModes: {
+                default: "destroy",
+              },
+              random: true,
+              speed: 20,
+              straight: true,
+              trail: {
+                fillColor: "#000",
+                length: 15,
+                enable: true,
+              },
+            },
+            number: {
+              limit: 40,
+            },
+          },
+          background: {
+            color: "#000",
+          },
+          fullScreen: {
+            zIndex: -1,
+          },
+          emitters: [
+            {
+              direction: "bottom",
+              size: {
+                width: 100,
+                height: 0,
+              },
+              position: {
+                x: 50,
+                y: 0,
+              },
+            },
+          ],
+        });
+      })();
+    </script>
+  </body>
+</html>

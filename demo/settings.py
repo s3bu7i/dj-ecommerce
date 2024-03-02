@@ -11,7 +11,7 @@ import django_heroku
 ENVIRONMENT = os.getenv('ENVIRONMENT', 'development')
 
 
-DEBUG = True
+DEBUG = False
 # ALLOWED_HOSTS = []
 ALLOWED_HOSTS = ['*']
 

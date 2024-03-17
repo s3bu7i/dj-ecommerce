@@ -1,5 +1,5 @@
 # from audioop import reverse
-from django.contrib.auth import authenticate, login
+from django.contrib.auth import authenticate, login,logout
 from imaplib import _Authenticator
 from django.urls import reverse
 from django.http import JsonResponse
@@ -468,7 +468,7 @@ def login_view(request):
             login(request, user)
             # Redirect to a success page, or some other page
             # Replace 'home' with the name of your home URL pattern
-            return redirect('home')
+            return redirect('core:home')
         else:
             # Return an error message or handle invalid login
             return render(request, 'login.html', {'error_message': 'Invalid username or password.'})
@@ -535,3 +535,9 @@ class CheckoutView(View):
 
         # Default return statement in case none of the exceptions are caught
         return HttpResponse("An error occurred during checkout process.")
+    
+def logout_view(request):
+    logout(request)
+    return redirect('core:login')
+
+

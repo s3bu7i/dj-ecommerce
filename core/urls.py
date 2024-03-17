@@ -48,6 +48,11 @@ urlpatterns = [
     path('send-contact/', views.send_contact_message,
          name='send_contact_message'),
     
+    path('logout/', views.logout_view, name='logout'),
+
+
+
+    
     # path('about_us/', about_us, name='about_us'),
     # path('send-contact-email/', send_contact_email, name='send_contact_email'),
     #path('contact/', views.contact_form(), name='index'),
